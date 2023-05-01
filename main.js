@@ -11,7 +11,7 @@ while (empty == false){
     if (compra === "" || compra === null) {
         empty=true
     }else{
-        compras = compras + " ," + compra
+        compras = compras + compra + ", " 
         console.log(compras)
     }
 }
