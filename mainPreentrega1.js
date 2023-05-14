@@ -3,7 +3,6 @@ let compra = ""
 let carro = ""
 let empty = false
 
-
 while (empty == false){
 
     compra = prompt("Ingrese Item")
