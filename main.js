@@ -13,6 +13,7 @@ const stock = [
     {nombre: "a", descripcion: "", precio: 10, cantidad: 1, fecha: Date.now()},
 
 ]
+
 console.log(stock)
 let listo = false
 let accion = 0
