@@ -4,53 +4,56 @@ class Item {
         this.descripcion = descripcion
         this.precio = precio
         this.catidad = cantidad
-        this.fecha
+        this.foto
         
     }
 }
 
-const stock = [
-    {nombre: "a", descripcion: "", precio: 10, cantidad: 1, fecha: Date.now()},
+const carrito = JSON.parse(localStorage.getItem("carrito")) ?? []
 
+
+const stock = [
+    {nombre: "a", descripcion: "ProductoA", precio: 10, cantidad: 1, foto: "./2023.png"},
+    {nombre: "b", descripcion: "ProductoB", precio: 11, cantidad: 2, foto: "./2023.png"},
+    {nombre: "c", descripcion: "ProductoC", precio: 12, cantidad: 3, foto: "./2023.png"},
+    {nombre: "d", descripcion: "ProductoD", precio: 13, cantidad: 4, foto: "./2023.png"},
+    {nombre: "e", descripcion: "ProductoE", precio: 14, cantidad: 5, foto: "./2023.png"},
+    {nombre: "f", descripcion: "ProductoF", precio: 15, cantidad: 6, foto: "./2023.png"},
+    {nombre: "g", descripcion: "ProductoG", precio: 16, cantidad: 7, foto: "./2023.png"},
+    {nombre: "h", descripcion: "ProductoH", precio: 17, cantidad: 8, foto: "./2023.png"},
+    {nombre: "i", descripcion: "ProductoI", precio: 18, cantidad: 9, foto: "./2023.png"},
+    {nombre: "j", descripcion: "ProductoJ", precio: 19, cantidad: 0, foto: "./2023.png"}
 ]
 
-console.log(stock)
-let listo = false
-let accion = 0
 
-
-accion = prompt("Para agregar 1, para eliminar 2")
-
-switch (accion) {
-  case "1":
-    while(listo === false){
-        const nombre = prompt("Nombre").toUpperCase()
-        const descripcion = prompt("Descripcion").toUpperCase()
-        const precio = parseFloat(prompt("Precio")) 
-        const cantidad = parseInt(prompt("Stock")) 
-        const item = new Item(nombre,descripcion,precio,cantidad)
-        stock.push(item)
-        listo = confirm("Fin de carga?")
-    }
-    break
-  case "2"  :
-    while(listo === false){
-        const eliminar = prompt("Que item?")
-        const index = stock.findIndex((item)=> item.nombre === eliminar)
-
-        if(index != -1){
-            stock.splice(index,1)
-            alert("Item eliminado")
-        }else{
-            alert("No existe")
-        }
-
-        listo = confirm("Fin de eliminacion?")
-    }
-    break
-  default:
-    console.log("Otro")
+const verItem = ({id,nombre,descripcion,precio,cantidad,foto }) =>{
+    const Tarjetas = document.querySelector("#Tarjetas")
+    const tarjeta = document.createElement("div")
+    tarjeta.className = "Tarjeta"
+    tarjeta.innerHTML = `
+                        <img src="${foto}" alt="">
+                        <div class="contenido">
+                            <h3>${nombre}</h3>
+                            <p>${descripcion}</p>
+                            <span><b>Precio:</b> ${precio}$</span>
+                        </div>
+                        
+                        
+    `
+    Tarjetas.append(tarjeta)
 }
 
-console.log(stock)
-alert("Exit")
+
+
+const verStock = () =>{
+
+    stock.forEach(item =>{
+        if(item.cantidad !=0){
+            verItem(item)
+            localStorage.setItem("carrito",JSON.stringify(carrito))
+        }
+        
+    })
+}
+
+verStock()

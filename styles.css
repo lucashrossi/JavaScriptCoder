@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Tarjeta{
+    width: 250px;
+    height: 350px;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+
+}
+.Tarjeta .contenido {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Tarjeta img{
+    width: inherit;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Tarjeta button {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
