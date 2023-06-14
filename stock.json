@@ -1,0 +1,12 @@
+[
+    {"id": "1", "nombre": "a", "descripcion": "ProductoA", "precio": 10, "cantidad": 1, "foto": "./2023.png"},
+    {"id": "2", "nombre": "b", "descripcion": "ProductoB", "precio": 11, "cantidad": 2, "foto": "./2023.png"},
+    {"id": "3", "nombre": "c", "descripcion": "ProductoC", "precio": 12, "cantidad": 3, "foto": "./2023.png"},
+    {"id": "4", "nombre": "d", "descripcion": "ProductoD", "precio": 13, "cantidad": 4, "foto": "./2023.png"},
+    {"id": "5", "nombre": "e", "descripcion": "ProductoE", "precio": 14, "cantidad": 5, "foto": "./2023.png"},
+    {"id": "6", "nombre": "f", "descripcion": "ProductoF", "precio": 15, "cantidad": 6, "foto": "./2023.png"},
+    {"id": "7", "nombre": "g", "descripcion": "ProductoG", "precio": 16, "cantidad": 7, "foto": "./2023.png"},
+    {"id": "8", "nombre": "h", "descripcion": "ProductoH", "precio": 17, "cantidad": 8, "foto": "./2023.png"},
+    {"id": "9", "nombre": "i", "descripcion": "ProductoI", "precio": 18, "cantidad": 9, "foto": "./2023.png"},
+    {"id": "10", "nombre": "j", "descripcion": "ProductoJ", "precio": 19, "cantidad": 0, "foto": "./2023.png"}
+]
