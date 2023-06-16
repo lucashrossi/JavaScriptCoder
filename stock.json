@@ -1,12 +1,13 @@
 [
-    {"id": "1", "nombre": "a", "descripcion": "ProductoA", "precio": 10, "cantidad": 1, "foto": "./2023.png"},
-    {"id": "2", "nombre": "b", "descripcion": "ProductoB", "precio": 11, "cantidad": 2, "foto": "./2023.png"},
-    {"id": "3", "nombre": "c", "descripcion": "ProductoC", "precio": 12, "cantidad": 3, "foto": "./2023.png"},
-    {"id": "4", "nombre": "d", "descripcion": "ProductoD", "precio": 13, "cantidad": 4, "foto": "./2023.png"},
-    {"id": "5", "nombre": "e", "descripcion": "ProductoE", "precio": 14, "cantidad": 5, "foto": "./2023.png"},
-    {"id": "6", "nombre": "f", "descripcion": "ProductoF", "precio": 15, "cantidad": 6, "foto": "./2023.png"},
-    {"id": "7", "nombre": "g", "descripcion": "ProductoG", "precio": 16, "cantidad": 7, "foto": "./2023.png"},
-    {"id": "8", "nombre": "h", "descripcion": "ProductoH", "precio": 17, "cantidad": 8, "foto": "./2023.png"},
-    {"id": "9", "nombre": "i", "descripcion": "ProductoI", "precio": 18, "cantidad": 9, "foto": "./2023.png"},
-    {"id": "10", "nombre": "j", "descripcion": "ProductoJ", "precio": 19, "cantidad": 0, "foto": "./2023.png"}
+    {"id": "1", "nombre": "Playa", "descripcion": "Foto de Playa", "precio": 10, "cantidad": 1, "foto": "./2023.png"},
+    {"id": "2", "nombre": "Lago", "descripcion": "Foto de Lago", "precio": 11, "cantidad": 2, "foto": "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?cs=srgb&dl=pexels-jaime-reimer-2662116.jpg&fm=jpg"},
+    {"id": "3", "nombre": "Rio", "descripcion": "Foto de Rio", "precio": 12, "cantidad": 3, "foto": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"},
+    {"id": "4", "nombre": "Flores", "descripcion": "Foto de Flores", "precio": 13, "cantidad": 4, "foto": "https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.webp?b=1&s=170667a&w=0&k=20&c=-UWLqQI8oIx2-sOdWemeJ4Hy1hGZi1UPy-qcivJXgyM="},
+    {"id": "5", "nombre": "Arboles", "descripcion": "Foto de Arboles", "precio": 14, "cantidad": 5, "foto": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"},
+    {"id": "6", "nombre": "Montaña", "descripcion": "Foto de Montaña", "precio": 15, "cantidad": 6, "foto": "https://images.pexels.com/photos/2613946/pexels-photo-2613946.jpeg?cs=srgb&dl=pexels-trace-hudson-2613946.jpg&fm=jpg"},
+    {"id": "7", "nombre": "Sol", "descripcion": "Foto de Sol", "precio": 16, "cantidad": 7, "foto": "https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?cs=srgb&dl=pexels-simon-berger-1266810.jpg&fm=jpg"},
+    {"id": "8", "nombre": "Nibe", "descripcion": "Foto de Nube", "precio": 17, "cantidad": 8, "foto": "https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"},
+    {"id": "9", "nombre": "Vacas", "descripcion": "Foto de Vacas", "precio": 18, "cantidad": 9, "foto": "https://images.all-free-download.com/images/graphiclarge/autumn_landscape_199954.jpg"},
+    {"id": "10", "nombre": "Camino", "descripcion": "Foto de Camino", "precio": 19, "cantidad": 0, "foto": "https://images.freeimages.com/images/previews/e86/sunset-1641488.jpg"}
 ]
+

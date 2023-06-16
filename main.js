@@ -12,20 +12,6 @@ class Item {
 const carrito = JSON.parse(localStorage.getItem("carrito")) ?? []
 
 
-// const stock = [
-//     {nombre: "a", descripcion: "ProductoA", precio: 10, cantidad: 1, foto: "./2023.png"},
-//     {nombre: "b", descripcion: "ProductoB", precio: 11, cantidad: 2, foto: "./2023.png"},
-//     {nombre: "c", descripcion: "ProductoC", precio: 12, cantidad: 3, foto: "./2023.png"},
-//     {nombre: "d", descripcion: "ProductoD", precio: 13, cantidad: 4, foto: "./2023.png"},
-//     {nombre: "e", descripcion: "ProductoE", precio: 14, cantidad: 5, foto: "./2023.png"},
-//     {nombre: "f", descripcion: "ProductoF", precio: 15, cantidad: 6, foto: "./2023.png"},
-//     {nombre: "g", descripcion: "ProductoG", precio: 16, cantidad: 7, foto: "./2023.png"},
-//     {nombre: "h", descripcion: "ProductoH", precio: 17, cantidad: 8, foto: "./2023.png"},
-//     {nombre: "i", descripcion: "ProductoI", precio: 18, cantidad: 9, foto: "./2023.png"},
-//     {nombre: "j", descripcion: "ProductoJ", precio: 19, cantidad: 0, foto: "./2023.png"}
-// ]
-
-
 const verItem = ({id,nombre,descripcion,precio,cantidad,foto }) =>{
     const Tarjetas = document.querySelector("#Tarjetas")
     const tarjeta = document.createElement("div")
@@ -63,31 +49,43 @@ const verStocks = async () =>{
     })
 }
 
-// const verStock = () =>{
-
-//     stock.forEach(item =>{
-//         if(item.cantidad !=0){
-//             verItem(item)
-//             localStorage.setItem("carrito",JSON.stringify(carrito))
-//         }
-        
-//     })
-// }
 
 verStocks()
 
+let cuantosT = 0
 
 const agregarC = (id) =>{
     const formCarrito = document.querySelector("#formCarrito" + id)
     formCarrito.addEventListener("submit",(e)=>{
         e.preventDefault()
         console.log(e.target)
-        const cuantos = e.target.children["cuantos"].value
+        let cuantos = e.target.children["cuantos"].value
+        console.log(cuantos)
+
+        const index = carrito.findIndex((item)=> item.id === id)
+
+        if(index != -1){
+            carrito.splice(index,1)
+        }
+
         carrito.push({
             id,
-            cuantos
+            cuantos,
+            
         })
         localStorage.setItem("carrito",JSON.stringify(carrito))
+
+        const numeroC = document.querySelector("#carrito")
+        const numeroCSD = document.querySelector("#sc")
+        numeroCSD.remove()
+        
+        cuantosT = parseInt(cuantosT) + parseInt(cuantos)
+        const numeroCS = document.createElement("span")
+        numeroCS.innerHTML = `
+     
+            <span id="sc">${cuantosT}</span>
+        `
+        numeroC.append(numeroCS)
   
           Toastify({
             text: "Agregado!",
